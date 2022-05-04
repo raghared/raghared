@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/projectdb
+    password: '@Zxcv9494'
+  mvc:
+    view:
+      prefix: /WEB-INF/jsps/
+      suffix: .jsp
+  jpa:
+    generate-ddl: 'true'
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+    open-in-view: false
+server:
+  servlet:
+    context-path: /locationweb
+  port: 8081
+
+    
